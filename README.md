@@ -13,20 +13,20 @@ La description de chaque sujet sont les suivantes:
 
 # Sujet 1:
 Le premier sujet consiste à développer une application web permettant aux enseignants de saisir et gérer les absences des étudiants. 
-Le sujet fait **70%** de la note finale et s'agit de la partie importante du projet.
+>Le sujet fait **70%** de la note finale et s'agit de la partie importante du projet.
 
 # Sujet 2:
 Le deuxième sujet consiste à développer un page web dynamique pour un "Slide puzzle"... 
-Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
+>Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
 
 # Sujet 3:
->Le troisième sujet consiste à développer une page dans le contexte ou le tahan Abdellah Zouzane est coincé sur la planète Said Foura, l'impatient qu'il est, joue un jeu de mot mêlés sous les instructions du maitre Florian Philippe (maitre Jedi appartenant à l'ordre défunt des Tahani, RIP Tahanistan 🍉). 
+Le troisième sujet consiste à développer une page dans le contexte ou le tahan Abdellah Zouzane est coincé sur la planète Said Foura, l'impatient qu'il est, joue un jeu de mot mêlés sous les instructions du maitre Florian Philippe (maitre Jedi appartenant à l'ordre défunt des Tahani, RIP Tahanistan 🍉).
 Le but de ce sujet est pouvoir faciliter pour Abdellah de trier une liste de mots pour que chaque mot commence par les 3 dernières lettres du mot précédent sur la page web... 
-Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
+>Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
 
 # Sujet 4:
 Le dernier sujet consiste à développer un TP Javascript sur les aspects Gestion d’événement et Interactions Utilisateur, le TP dois être développer sur un page web dynamique...
-Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
+>Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
 
 ## Structure du projet
 ```
