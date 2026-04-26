@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* login */
+.login-body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h1 { font-size: 24px; color: #333; margin-bottom: 25px; }
+
+.login-form-group { margin-bottom: 15px; text-align: left; }
+.login-form-group label { display: block; margin-bottom: 5px; color: #555; }
+.login-form-group input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.error-message { color: red; margin-bottom: 15px; font-size: 14px; }
+
+/* header */
+.main-header { background-color: #667eea; padding: 12px 20px; }
+.header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.header-title { margin: 0; font-size: 20px; color: white; }
+.main-nav { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.nav-link, .logout-btn {
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.nav-link:hover, .logout-btn:hover { background-color: rgba(255,255,255,0.2); }
+.user-name { color: white; font-size: 14px; }
+.user-info { display: flex; align-items: center; gap: 12px; }
+
+/* contenu */
+.main-content { max-width: 1100px; margin: 25px auto; padding: 0 20px; }
+.page-title { font-size: 22px; color: #333; margin-bottom: 20px; }
+
+/* tableaux */
+table { width: 100%; border-collapse: collapse; background: white; margin-bottom: 20px; }
+table th { background-color: #4CAF50; color: white; padding: 10px; text-align: left; }
+table td { padding: 10px; border-bottom: 1px solid #ddd; }
+table tr:hover { background-color: #f9f9f9; }
+
+/* boutons */
+button { background-color: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; }
+button:hover { background-color: #45a049; }
+.btn-small { padding: 5px 10px; font-size: 12px; margin-right: 4px; }
+.btn-danger { background-color: #e74c3c; }
+.btn-info { background-color: #2196F3; }
+
+/* statuts */
+.status { display: inline-block; padding: 3px 8px; border-radius: 3px; font-size: 12px; font-weight: bold; }
+.status.justified { background-color: #4CAF50; color: white; }
+.status.unjustified { background-color: #e74c3c; color: white; }
+
+/* formulaires */
+.form-section { background: white; padding: 20px; border-left: 4px solid #4CAF50; margin-bottom: 25px; }
+.form-section h2 { margin-top: 0; font-size: 18px; }
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; margin-bottom: 4px; font-weight: bold; font-size: 13px; }
+.form-group input, .form-group select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+
+/* dashboard */
+.stats-grid { display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 30px; }
+.stat-card { background: white; padding: 20px; border-left: 4px solid #667eea; text-align: center; flex: 1; min-width: 150px; }
+.stat-card h3 { font-size: 30px; margin: 0 0 8px 0; color: #667eea; }
+.stat-card p { margin: 0; color: #666; font-size: 13px; }
+.stat-card.alert { border-left-color: #e74c3c; }
+.stat-card.alert h3 { color: #e74c3c; }
+
+.dashboard-section { background: white; padding: 20px; margin-bottom: 20px; }
+.dashboard-section h2 { font-size: 18px; margin-bottom: 15px; }
+.quick-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.action-btn { background-color: #667eea; color: white; text-decoration: none; padding: 10px 16px; border-radius: 4px; font-size: 13px; }
+.action-btn:hover { background-color: #5a6fd6; }
+
+/* divers */
+.back-link { display: inline-block; margin-bottom: 15px; color: #4CAF50; text-decoration: none; font-size: 13px; }
+.search-container input { padding: 7px; width: 280px; border: 1px solid #ccc; border-radius: 4px; }

@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+.resultat {
+    margin-top: 15px;
+}
+
+.mot {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 4px 8px;
+    margin: 4px 2px;
+}
+
+.fleche {
+    margin: 0 3px;
+}

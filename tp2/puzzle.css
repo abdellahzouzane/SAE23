@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+#grille {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 3px;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+.case {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.vide {
+    background-color: white;
+    border: 1px solid white;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
