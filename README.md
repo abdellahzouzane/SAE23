@@ -1,63 +1,109 @@
-# README.md - Français uniquement
+# SAE23 - Mini-Projets Web Dynamique
+
+**Groupe :** Abdellah, Rayan, Said, Florian  
+**Formation :** BUT R&T - IUT Rouen  
+
 ---
-# Projet: Web Dynamique pour multiple sujets
-
-## Description générale du projet
-Ce projet consiste de réaliser plusieurs sujet sur certaine condition dans chacun d'entre eux. Les sujets sont les suivants:
-- **1.** Gestion des Absences en ligne - Cahier des charges ;
-- **2.** Slide Puzzle (casse-tête) ;
-- **3.** Ne pas t'énerver tu devras ;
-- **4.** TP JavaScript (3 TPs, 4 pour les groupes à 4 personnes).
-
-La description de chaque sujet sont les suivantes:
-
-# Sujet 1:
-Le premier sujet consiste à développer une application web permettant aux enseignants de saisir et gérer les absences des étudiants. 
->Le sujet fait **70%** de la note finale et s'agit de la partie importante du projet.
-
-# Sujet 2:
-Le deuxième sujet consiste à développer un page web dynamique pour un "Slide puzzle"... 
->Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
-
-# Sujet 3:
-Le troisième sujet consiste à développer une page dans le contexte ou le tahan Abdellah Zouzane est coincé sur la planète Said Foura, l'impatient qu'il est, joue un jeu de mot mêlés sous les instructions du maitre Florian Philippe (maitre Jedi appartenant à l'ordre défunt des Tahani, RIP Tahanistan 🍉).
-Le but de ce sujet est pouvoir faciliter pour Abdellah de trier une liste de mots pour que chaque mot commence par les 3 dernières lettres du mot précédent sur la page web... 
->Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
-
-# Sujet 4:
-Le dernier sujet consiste à développer un TP Javascript sur les aspects Gestion d’événement et Interactions Utilisateur, le TP dois être développer sur un page web dynamique...
->Le sujet fait **10%** de la note finale et s'agit de la partie moins importante du projet.
 
 ## Structure du projet
+
 ```
-Projet_SAE23/ # Dossier stock SAE23
+SAE23/
 │
+├── gestion_absences/         # TP1 - Gestion des absences
+│   ├── CSS/
+│   │   └── styles.css
+│   ├── JS/
+│   │   └── interaction.js
+│   ├── models/
+│   │   ├── ajoutProf.php
+│   │   ├── ajoutSecretaire.php
+│   │   ├── attendanceCourse.php
+│   │   ├── db.php
+│   │   ├── deconexion.php
+│   │   ├── detailAbsences.php
+│   │   ├── listeEtudiants.php
+│   │   ├── login.php
+│   │   ├── mesAbsences.php
+│   │   ├── pageGestionCompte.php
+│   │   └── secretaireDashboard.php
+│   ├── templates/
+│   │   ├── accueil.php
+│   │   ├── agendaProf.php
+│   │   ├── ajoutCours.php
+│   │   ├── ajoutEtudiant.php
+│   │   ├── ajoutProf.php
+│   │   ├── ajoutSecretaire.php
+│   │   ├── attendanceCourse.php
+│   │   ├── detailAbsences.php
+│   │   ├── header.php
+│   │   ├── listeEtudiant.php
+│   │   └── listeEtudiants.php
+│   ├── index.php
+│   └── projetSAE23SQL.sql
 │
-├── Menu/ # Page présentant les sujets
-│ ├── Menu.php # Page surface
-│ └── Menu.js # Script dynamique
-│ └── Menu.css # Page filtre
-|
-├── Sujet 1/ # Dossier Sujet 1
-│ ├── Sujet_1.php # Page surface
-│ └── Sujet_1.js # Script dynamique
-│ └── Sujet_1.sql # Stock données
-│ └── Sujet_1.css # Page filtre
-|
-├── Sujet 2/ # Dossier Sujet 2
-│ ├── Sujet_2.php # Page surface
-│ └── Sujet_2.js # Script dynamique
-│ └── Sujet_2.css # Page filtre
+├── TP2/                      # TP2 - Slide Puzzle
+│   ├── index.php
+│   ├── logique.php
+│   └── puzzle.css
 │
-├── Sujet 3/ # Dossier Sujet 3
-│ ├── Sujet_3.php # Page surface
-│ └── Sujet_3.js # Script dynamique
-│ └── Sujet_3.css # Page filtre
+├── TP3/                      # TP3 - Chaîne de mots Yoda
+│   ├── index.php
+│   └── style.css
 │
-├── Sujet 4/ # Dossier Sujet 4
-│ ├── Sujet_4.php # Page surface
-│ └── Sujet_4.js # Script dynamique
-│ └── Sujet_4.css # Page filtre
-│
-└── README.md # Documentation du projet
+└── TP4-JavaScript/           # TP4 - TP JavaScript (1 par personne)
+    ├── tp4-Abdellah/
+    ├── tp4-Florian/
+    ├── tp4-Rayan/
+    └── tp4-Said/
 ```
+
+---
+
+## TP1 - Gestion des absences
+
+Plateforme web de saisie et gestion des absences étudiants.  
+Connexion sécurisée avec des rôles : professeur, secrétaire et étudiant.  
+Les absences sont enregistrées dans une base de données MySQL.
+
+**Technologies :** PHP, MySQL, HTML, CSS, JavaScript
+
+---
+
+## TP2 - Slide Puzzle
+
+Jeu de taquin 4x4 jouable dans le navigateur.  
+Les cases sont mélangées aléatoirement et il faut les remettre dans l'ordre en cliquant dessus.
+
+**Technologies :** PHP, HTML, CSS
+
+---
+
+## TP3 - Chaîne de mots Yoda
+
+Algorithme qui cherche la plus longue chaîne de mots possible où les 3 dernières lettres de chaque mot correspondent aux 3 premières du mot suivant.
+
+**Technologies :** PHP, HTML, CSS
+
+---
+
+## TP4 - TP JavaScript
+
+Chaque membre du groupe a conçu un TP JavaScript complet sur la gestion d'événements et les interactions utilisateur.
+
+| Membre | Dossier |
+|--------|---------|
+| Abdellah | tp4-Abdellah/ |
+| Florian | tp4-Florian/ |
+| Rayan | tp4-Rayan/ |
+| Said | tp4-Said/ |
+
+---
+
+## Lancer le projet en local
+
+1. Installer XAMPP
+2. Copier les dossiers dans `C:/xampp/htdocs/`
+3. Démarrer Apache et MySQL depuis XAMPP
+4. Importer `projetSAE23SQL.sql` dans phpMyAdmin
+5. Accéder au projet via `http://localhost/`
