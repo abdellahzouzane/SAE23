@@ -1,32 +1,24 @@
-<?php require 'logique.php'; ?>
-
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Slide Puzzle</title>
-    <link rel="stylesheet" href="puzzle.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sujet 2 - Slide Puzzle</title>
+        <link rel="stylesheet" href="SAE23.css">
+        <script src="SAE23.js"></script>
+    </head>
+    <body>
+        <!---BACKGROUND--->
+        <h1>Sujet 2 - Slide Puzzle</h1>
 
-<h2>Slide Puzzle</h2>
-<p>Déplacements : <strong><?= $_SESSION['compteur'] ?></strong></p>
-<a href="index.php?melanger=1">Mélanger</a>
+        <p>Déplacements : <strong id="moves">0</strong></p>
+        <button onclick="shuffleBoard()">Mélanger</button>
+        <button onclick="resetGame()">Nouvelle partie</button>
+        <button onclick="solvePuzzle()">Résoudre</button>
 
-<?php if ($gagne): ?>
-    <p><strong>Bravo ! Résolu en <?= $_SESSION['compteur'] ?> déplacements !</strong></p>
-<?php endif; ?>
+        <!---POZZLE--->
+        <section id="jeu"></section>
 
-<div id="grille">
-<?php for ($i = 0; $i < 16; $i++): ?>
-    <?php $val = $_SESSION['cases'][$i]; ?>
-    <?php if ($val == 0): ?>
-        <button class="vide"></button>
-    <?php else: ?>
-        <a href="index.php?clic=<?= $i ?>"><button class="case"><?= $val ?></button></a>
-    <?php endif; ?>
-<?php endfor; ?>
-</div>
-
-</body>
+        <!---RESULTAT--->
+        <p id="win">Puzzle résolu. <span id="finalMoves"></span> déplacements.</p>
+    </body>
 </html>
